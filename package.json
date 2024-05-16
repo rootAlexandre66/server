@@ -5,23 +5,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev Server.ts",
-    "start": "node dist/server.js",
+    "start": "node dist/server.js", 
+    "rails-start": "node dist/server.js", 
     "build": "rimraf dist && tsc -p . && copyfiles --flat ./package.json dist",
     "server": "nodemon Server.ts"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
   },
   "keywords": [],
   "author": "",
@@ -67,7 +54,6 @@
     "morgan": "^1.10.0",
     "nodemailer": "^6.9.5",
     "nodemon": "^3.0.1",
-    "npm": "^10.0.0",
     "password-hash": "^1.2.2",
     "pkg": "^5.8.1",
     "pm2": "^5.3.1",
